@@ -10,15 +10,30 @@
 }
 
 header{
+    position: static;
     background-color: rgb(33, 62, 166);
     padding: 2%;
     box-shadow: 10px 10px 5px lightblue;
-    width: 100%;
+    width: 100vw;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1{
+    font-size: 55px;
     font-family: 'Noto sans';
     font-variant: small-caps;
+}
+
+hr{
+    max-width: 100%;
+    height: 2px;
+    border: none;
+    border-radius: 15px;
+    background-color: lightgray;
 }
 
 .images{
@@ -64,7 +79,7 @@ p{
 
 .section_02{
     padding: 2%;
-    width: 100%;
+    width: 100vw;
     margin-top: 10%;
     background-color: rgb(33, 62, 166);
 }
@@ -91,7 +106,7 @@ h2{
     box-shadow: 10px 10px darkblue;
     border-radius: 15px;
     padding: 2%;
-    max-height: 380px;
+    max-height: fit-content;
     max-width: 20%;
     background-color: white;
 
@@ -111,4 +126,39 @@ h2{
     margin: 2%;
     width: 70px;
     height: 70px;
+}
+.section_03{
+    max-width: 100%;
+    flex-flow: row;
+    display: flex;
+}
+.sec3_info{
+    padding: 3%;
+    max-width: 50%;
+}
+
+.sec3_info p {
+    margin-bottom: 5%;
+    color: black;
+    font-size: 30px;
+}
+
+.sec3_info hr {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.social_media_icon {
+    position: static;
+    display: flex;
+}
+
+footer{
+    background-color: rgb(33, 62, 166);
+    padding: 2%;
+    text-align: center;
+}
+
+h3 {
+    font-family: "noto sans";
 }
